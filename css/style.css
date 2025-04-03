@@ -19,7 +19,7 @@ ul{
   padding: 0;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, blockquote{
   margin: 0;
 }
 
@@ -55,8 +55,7 @@ body{
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  min-height: 100vh;
-  padding-bottom: 80px;
+  min-height: 90vh;
 }
 
 .header__top{
@@ -134,7 +133,6 @@ body{
   padding: 10px 20px;
   text-align: center;
   justify-self: start;
-
 }
 
 .header__moreinfo{
@@ -176,6 +174,7 @@ h3{
 .header__bottom{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .header__socials-list{
@@ -195,4 +194,71 @@ h3{
 
 .act_btn{
   background-color: rgba(255, 255, 255, 0.3)
+}
+
+.blockquote__text{
+  font-size: 64px;
+  font-weight: 800;
+  margin: 150px 0;
+  max-width: 1073px;
+}
+
+.who_we_are__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 0 310px;
+  margin-bottom: 150px;
+}
+
+.who_we_are-intro{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 100px;
+}
+
+.who_we_are-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  margin-bottom: 256px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.who_we_are-item{
+  color: #0A507A;
+  border: 1px solid #0A507A;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  justify-self: start;
+}
+
+.who_we_are-text-pt1{
+  margin-bottom: 20px;
+}
+
+.who_we_are-pic{
+  position: relative;
+  display: inline-block;
+}
+
+.who_we_are-img{
+  display: block;
+  /* width: 100%; */
+}
+
+.act_btn.light{
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 46px;
+  right: 68px;
+  white-space: nowrap;
 }
