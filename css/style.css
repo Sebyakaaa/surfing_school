@@ -218,7 +218,9 @@ body{
   display: flex;
   flex-direction: column;
   max-width: 560px;
+  min-width: 440px;
   margin-right: auto;
+  flex-shrink: 1;
 }
 
 .who_we_are-intro,
@@ -253,6 +255,7 @@ body{
 
 .who_we_are-pic{
   position: relative;
+  padding-left: 10px;
 }
 
 .who_we_are-img{
@@ -260,6 +263,9 @@ body{
   max-width: 851px;
   max-height: 1000px;
   width: 100%;
+  min-width: 740px;
+  min-height: 631px;
+  overflow: hidden;
 }
 
 .act_btn.light{
