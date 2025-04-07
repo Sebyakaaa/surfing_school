@@ -51,6 +51,7 @@ body{
   font-size: 16px;
   font-weight: 600;
   font-family: "Rethink Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container{
@@ -182,7 +183,8 @@ body{
   margin-bottom: 80px;
 }
 
-.header__socials-list{
+.header__socials-list,
+.footer__socials-list{
   display: flex;
   gap: 0 20px;
 }
@@ -224,7 +226,8 @@ body{
 }
 
 .who_we_are-intro,
-.activities-intro{
+.activities-intro,
+.review-intro{
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -318,4 +321,112 @@ body{
 
 .activities-item span{
   min-width: 118px;
+}
+
+.surf{
+  width: 100%;
+  max-width: 100%;
+}
+.surf-pic img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.review__inner{
+  margin-top: 150px;
+}
+.review-top{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 100px;
+}
+
+.review-intro,
+.review-title{
+  grid-column: 2;
+}
+
+.review-list{
+  display: flex;
+  margin-bottom: 150px;
+  gap: 0 20px;
+}
+
+.review-item:nth-child(even){
+  margin-top: 94px;
+}
+
+.review-item-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0 134px;
+  flex-wrap: nowrap;
+}
+
+.review-item-content .review-item-name{
+  text-align: end;
+}
+
+.review-item-text{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-basis: 75%;
+}
+
+.review-item-name{
+  line-height: 1.5;
+  flex-basis: 25%;
+}
+
+.footer{
+  padding: 100px 0;
+  background-color: #2B2A29;
+  color: white;
+}
+
+.footer__inner{
+  padding: 0 290px;
+}
+
+.footer__top{
+  display: flex;
+}
+
+.footer__content{
+  display: flex;
+  gap: 0 68px;
+  margin-bottom: 59px;
+}
+
+.footer-title{
+  margin-bottom: 29px;
+  margin-right: auto;
+}
+
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__socials-items img{
+  filter: invert(1);
+}
+
+.footer__bottom-conditions{
+  display: flex;
+  gap: 0 40px;
+}
+
+h4{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-school-record,
+.footer-address-record,
+.footer-contacts-mobile{
+  margin-bottom: 20px;
 }
