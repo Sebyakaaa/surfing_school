@@ -405,6 +405,10 @@ body{
   margin-right: auto;
 }
 
+.footer__logo{
+  padding-left: 10px;
+}
+
 .footer__bottom{
   display: flex;
   justify-content: space-between;
@@ -418,6 +422,7 @@ body{
 .footer__bottom-conditions{
   display: flex;
   gap: 0 40px;
+  padding-left: 10px;
 }
 
 h4{
