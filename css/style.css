@@ -60,21 +60,24 @@ body{
   margin: 0 auto;
   padding: 0 100px ;
 }
-
-.header__top{
-  display: flex;
+.header{
   position: fixed;
   background-color: white;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 100px;
-  font-size: 20px;
-  font-weight: 700;
-  z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .menu__list{
@@ -346,7 +349,6 @@ section{
   max-width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 
 .surf-pic img{
