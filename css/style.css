@@ -19,7 +19,7 @@ ul{
   padding: 0;
 }
 
-h1, h2, h3, p, blockquote{
+h1, h2, h3, h4, p, blockquote{
   margin: 0;
 }
 
@@ -52,6 +52,7 @@ body{
   font-weight: 600;
   font-family: "Rethink Sans", sans-serif;
   overflow-x: hidden;
+  padding-top: 66px;
 }
 
 .container{
@@ -60,22 +61,20 @@ body{
   padding: 0 100px ;
 }
 
-.header{
-  background-image: url(../images/background_header.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  min-height: 100vh;
-}
-
 .header__top{
   display: flex;
+  position: fixed;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 33px;
+  padding: 10px 100px;
   font-size: 20px;
   font-weight: 700;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu__list{
@@ -84,7 +83,6 @@ body{
   gap: 0 40px;
   color: #0A507A;
   padding-right: 20px;
-  /* max-width: 656px; */
 }
 
 .header__contact-phone{
@@ -105,14 +103,26 @@ body{
   background-image: url(../images/phone-line.svg);
 }
 
+.banner{
+  padding-top: 44px;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: url(../images/background_header.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 .title-img{
-  margin-bottom: 12px;
   width: 100%;
   position: relative;
   z-index: -1;
 }
 
-.header__location{
+.location{
   padding: 10px 20px;
   background-color: #2B2A29;
   color: white;
@@ -120,15 +130,15 @@ body{
   display: inline-block;
 }
 
-.header__main{
+.banner__main{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start
+  align-items: flex-end;
+  margin-bottom: 103px;
 }
 
-.header__advantages-list{
-  margin-top: 226px;
-  margin-bottom: 118px;
+.banner__advantages-list{
+  padding-bottom: 15px;
   display: flex;
   /* grid-template-columns: repeat(2, 1fr); */
   width: 491px;
@@ -137,7 +147,7 @@ body{
   font-size: 26px;
 }
 
-.header__advantages-item{
+.banner__advantages-item{
   color: #0A507A;
   border: 1px solid #0A507A;
   border-radius: 30px;
@@ -146,7 +156,7 @@ body{
   justify-self: start;
 }
 
-.header__moreinfo{
+.banner__moreinfo{
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.8);
@@ -156,45 +166,45 @@ body{
   height: 485px;
   width: 392px;
   font-weight: 800;
+  padding: 50px 20px;
 }
 
-.header__moreinfo-title{
-  margin: 50px 20px 10px 20px;
+.banner__moreinfo-title{
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
-.header__moreinfo-link{
-  margin-left: 20px;
+.banner__moreinfo-link{
   font-size: 16px;
   text-decoration: underline;
+  margin-bottom: 30px;
 }
 
-.header__moreinfo-link:hover{  
+.banner__moreinfo-link:hover{  
   cursor: pointer;
 }
 
-.header__moreinfo-img{
+.banner__moreinfo-img{
   align-self: center;
-  margin-top: 30px;
 }
 
-.header__bottom{
+.banner__bottom{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
-.header__socials{
+.banner__socials{
   padding-right: 133px;
 }
 
-.header__socials-list,
+.banner__socials-list,
 .footer__socials-list{
   display: flex;
   gap: 0 20px;
 }
 
-.header__actions{
+.banner__actions{
   display: flex;
   gap: 0 20px;
 }
@@ -208,17 +218,20 @@ body{
   background-color: rgba(255, 255, 255, 0.3)
 }
 
+.blockquote,
+section{
+  margin-bottom: 150px;
+}
+
 .blockquote__text{
   font-size: 64px;
   font-weight: 800;
-  margin: 150px 0;
   max-width: 1073px;
 }
 
 .who_we_are__inner{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
 }
 
 .who_we_are__content{
@@ -238,12 +251,15 @@ body{
   margin-bottom: 20px;
 }
 
+.who_we_are-title{
+  margin-bottom: 100px;
+}
+
 .who_we_are-list{
   display: flex;
   flex-wrap: wrap;
   gap: 10px 10px;
   margin-bottom: auto;
-  margin-top: 100px;
   font-size: 26px;
   font-weight: 700;
 }
@@ -258,7 +274,7 @@ body{
 }
 
 .who_we_are-text-pt1{
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .who_we_are-pic{
@@ -282,10 +298,6 @@ body{
   position: absolute;
   bottom: 46px;
   right: 68px;
-}
-
-.activities__inner{
-  margin-bottom: 100px;
 }
 
 .activities__content{
@@ -328,19 +340,21 @@ body{
   min-width: 118px;
 }
 
-.surf{
-  width: 100%;
+.surf {
+  margin-left: -100px;
+  margin-right: -100px;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
+
 .surf-pic img{
   width: 100%;
   height: auto;
   display: block;
 }
 
-.review__inner{
-  margin-top: 150px;
-}
 .review-top{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -354,7 +368,6 @@ body{
 
 .review-list{
   display: flex;
-  margin-bottom: 150px;
   gap: 0 20px;
 }
 
@@ -401,21 +414,17 @@ body{
 
 .footer__top{
   display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo{
+  padding-left: 10px;
 }
 
 .footer__content{
   display: flex;
   gap: 0 68px;
   margin-bottom: 59px;
-}
-
-.footer-title{
-  margin-bottom: 29px;
-  margin-right: auto;
-}
-
-.footer__logo{
-  padding-left: 10px;
 }
 
 .footer__bottom{
@@ -491,25 +500,25 @@ h4{
   button{
     white-space: nowrap;
   }
-  .header__advantages-list{
+  .banner__advantages-list{
     font-size: 20px;
   }
   .menu__list{
     white-space: nowrap;
     flex-wrap: wrap;
   }
-  .header__bottom,
+  .banner__bottom,
   .footer__bottom,
-  .header__main,
+  .banner__main,
   .who_we_are__inner{
     flex-wrap: wrap;
     gap: 40px 0;
     justify-content: center;
   }
-  .header__moreinfo{
+  .banner__moreinfo{
     margin-bottom: 40px;
   }
-  .header__advantages-list{
+  .banner__advantages-list{
     margin-bottom: 50px;
   }
   .blockquote__text{
